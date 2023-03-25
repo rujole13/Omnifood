@@ -9,9 +9,6 @@
 - Line heights:
 Default: 1
 
-- SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
 --- 02 COLORS
 
 - Primary: #e67e22
@@ -22,6 +19,16 @@ Default: 1
 - Greys:
 #555
 
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
 */
 
 * {
@@ -30,9 +37,28 @@ Default: 1
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px(default) = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+.test {
+  /* width: 1000px; */
+  background-color: red;
+  /* max-width: 1000px; */
+
+  max-width: 50rem;
+  padding: 4rem;
+  font-size: 2rem;
+  color: #fff;
+  /* By deafult, 1rem = 16px */
 }
